@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+img{
+    border: none;
+    vertical-align: middle;
+}
+input,button{
+    border: none;
+    outline: 0;
+}
+/* IE10、11 下type='text'会自带X ，密码框自带眼睛，下面两个就是分别处理 */
+input::-ms-clear{
+    display: none;
+}
+input::-ms-reveal{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #333;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+}
+/* 设置浮动 */
+.float_l{
+    float: left;
+}
+.float_r{
+    float: right;
+}
+/* 清除浮动 */
+.clearfix::before,.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0;
+    line-height: 0;
+}
+.clearfix{
+    zoom: 1;
+}
+/* */
